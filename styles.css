@@ -4,18 +4,25 @@
   font-family: sans-serif;
 }
 
+ body {
+  background-image: linear-gradient(#ab1fce,   #144e66);
+} 
+
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("images/background.png");
-  background-size: cover;
+  background-image: url("images/background image.png");
+  background-size: 600px;
+
   background-position: center;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: ;
 }
 
 .logo {
-  width: 83px;
+  width: 140px;
   cursor: pointer;
 }
 .logo-title {
@@ -47,7 +54,7 @@ button {
   color: #e4e4e4;
   position: absolute;
   top: 45%;
-  left: 8%;
+  left: 3%;
   z-index: 2;
 }
 
@@ -60,14 +67,14 @@ button {
   line-height: 80px;
 }
 
-.side-bar {
-  width: 50px;
+/* .side-bar {
+  width: 30px;
   height: 100vh;
-  background: linear-gradient(#00545d, #000729);
+  background: linear-gradient(#4e1c6f, #2d3765);
   position: absolute;
   right: 0;
   top: 0;
-}
+} */
 
 .menu {
   display: block;
@@ -98,8 +105,8 @@ button {
 }
 
 .bubbles img {
-  width: 50px;
-  animation: bubbls 7s linear infinite;
+  width: 90px;
+  animation: bubbls 6s linear infinite;
 }
 
 .bubbles {
@@ -112,52 +119,545 @@ button {
 }
 
 @keyframes bubbls {
-    0%{
-        transform: translateY(0);
-        opacity: 0;    
-}
-    50%{
-        opacity: 1;    
-}
-    70%{
-        opacity: 1;    
-}
-    100%{
-        transform: translateY(-80vh);
-        opacity: 0;    
-}
-
+  100% {
+    transform: translateY(-60vh);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
 }
 
 .bubbles img:nth-child(1) {
-    animation-delay: 2s;
-    width: 25px;
-
+  animation-delay: 2s;
+  width: 50px;
 }
 .bubbles img:nth-child(2) {
-    animation-delay: 1s;
-
+  animation-delay: 1s;
 }
 .bubbles img:nth-child(3) {
-    animation-delay: 3s;
-    width: 25px;
-
+  animation-delay: 3s;
+  width: 49px;
 }
 .bubbles img:nth-child(4) {
-    animation-delay: 4.5s;
-
+  animation-delay: 4.5s;
 }
 .bubbles img:nth-child(5) {
-    animation-delay: 3s;
-
+  animation-delay: 3s;
 }
 .bubbles img:nth-child(6) {
-    animation-delay: 6s;
-    width: 20px;
-
+  animation-delay: 6s;
+  width: 49px;
 }
 .bubbles img:nth-child(7) {
-    animation-delay: 7s;
-    width: 35px;
+  animation-delay: 7s;
+  width: 48px;
+}
 
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+section .set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+
+section .set div {
+  position: absolute;
+  display: block;
+
+}
+
+
+section .set div:nth-child(1) {
+  left: 10%;
+  animation: animate 10s linear infinite;
+}
+section .set div:nth-child(2) {
+  left: 20%;
+  animation: animate 19s linear infinite;
+  animation-delay: -1.7s;
+}
+section .set div:nth-child(3) {
+  left: 30%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(4) {
+  left: 40%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(5) {
+  left: 50%;
+  animation: animate 17s linear infinite;
+}
+section .set div:nth-child(6) {
+  left: 60%;
+  animation: animate 16s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(7) {
+  left: 70%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(8) {
+  left: 80%;
+  animation: animate 14s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(9) {
+  left: 90%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(10) {
+  left: 99%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(11) {
+  left: 10%;
+  animation: animate 19s linear infinite;
+}
+section .set div:nth-child(12) {
+  left: 20%;
+  animation: animate 17s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(13) {
+  left: 30%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(14) {
+  left: 40%;
+  animation: animate 15s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(15) {
+  left: 50%;
+  animation: animate 14s linear infinite;
+}
+section .set div:nth-child(16) {
+  left: 60%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(17) {
+  left: 70%;
+  animation: animate 16s linear infinite;
+}
+section .set div:nth-child(18) {
+  left: 80%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(19) {
+  left: 90%;
+  animation: animate 16s linear infinite;
+}
+section .set div:nth-child(20) {
+  left: 99%;
+  animation: animate 29s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(21) {
+  left: 13%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(22) {
+  left: 23%;
+  animation: animate 16s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(23) {
+  left: 33%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(24) {
+  left: 43%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(25) {
+  left: 53%;
+  animation: animate 25s linear infinite;
+}
+section .set div:nth-child(26) {
+  left: 63%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(27) {
+  left: 73%;
+  animation: animate 13s linear infinite;
+}
+section .set div:nth-child(28) {
+  left: 83%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(29) {
+  left: 92%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(30) {
+  left: 16%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(31) {
+  left: 26%;
+  animation: animate 19s linear infinite;
+}
+section .set div:nth-child(32) {
+  left: 36%;
+  animation: animate 22s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(33) {
+  left: 46%;
+  animation: animate 11s linear infinite;
+}
+section .set div:nth-child(34) {
+  left: 56%;
+  animation: animate 17s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(35) {
+  left: 66%;
+  animation: animate 11s linear infinite;
+}
+section .set div:nth-child(36) {
+  left: 76%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(37) {
+  left: 86%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(38) {
+  left: 96%;
+  animation: animate 11s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(39) {
+  left: 5%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(40) {
+  left: 18%;
+  animation: animate 24s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(41) {
+  left: 28%;
+  animation: animate 14s linear infinite;
+}
+section .set div:nth-child(42) {
+  left: 38%;
+  animation: animate 18s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(43) {
+  left: 48%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(44) {
+  left: 58%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(45) {
+  left: 68%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(46) {
+  left: 78%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(47) {
+  left: 88%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(48) {
+  left: 98%;
+  animation: animate 22s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(49) {
+  left: 41%;
+  animation: animate 10s linear infinite;
+}
+section .set div:nth-child(50) {
+  left: 33%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(51) {
+  left: 25%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(52) {
+  left: 85%;
+  animation: animate 21s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(53) {
+  left: 63%;
+  animation: animate 16s linear infinite;
+}
+section .set div:nth-child(54) {
+  left: 76%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(55) {
+  left: 82%;
+  animation: animate 25s linear infinite;
+}
+section .set div:nth-child(56) {
+  left: 43%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(57) {
+  left: 45%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(58) {
+  left: 56%;
+  animation: animate 15s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(59) {
+  left: 46%;
+  animation: animate 25s linear infinite;
+}
+section .set div:nth-child(60) {
+  left: 54%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(61) {
+  left: 76%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(62) {
+  left: 65%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(63) {
+  left: 46%;
+  animation: animate 10s linear infinite;
+}
+section .set div:nth-child(64) {
+  left: 47%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(65) {
+  left: 85%;
+  animation: animate 17s linear infinite;
+}
+section .set div:nth-child(66) {
+  left: 24%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(67) {
+  left: 77%;
+  animation: animate 11s linear infinite;
+}
+section .set div:nth-child(68) {
+  left: 45%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(69) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(70) {
+  left: 47%;
+  animation: animate 21s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(71) {
+  left: 87%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(72) {
+  left: 87%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(73) {
+  left: 78%;
+  animation: animate 16s linear infinite;
+}
+section .set div:nth-child(74) {
+  left: 57%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(75) {
+  left: 43%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(76) {
+  left: 34%;
+  animation: animate 23s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(77) {
+  left: 37%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(78) {
+  left: 38%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(79) {
+  left: 52%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(80) {
+  left: 25%;
+  animation: animate 12s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(81) {
+  left: 25%;
+  animation: animate 18s linear infinite;
+}
+section .set div:nth-child(82) {
+  left: 47%;
+  animation: animate 14s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(83) {
+  left: 65%;
+  animation: animate 21s linear infinite;
+}
+section .set div:nth-child(84) {
+  left: 20%;
+  animation: animate 19s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(85) {
+  left: 87%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(86) {
+  left: 98%;
+  animation: animate 17s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(87) {
+  left: 67%;
+  animation: animate 15s linear infinite;
+}
+section .set div:nth-child(88) {
+  left: 56%;
+  animation: animate 20s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(89) {
+  left: 23%;
+  animation: animate 14s linear infinite;
+}
+section .set div:nth-child(90) {
+  left: 24%;
+  animation: animate 10s linear infinite;
+  animation-delay: -2.7s;
+}
+section .set div:nth-child(91) {
+  left: 74%;
+  animation: animate 20s linear infinite;
+  animation-delay: -4.7s;
+}
+
+
+
+ 
+.ogs {
+  border-radius: 50%;
+  width: 47px;
+}
+
+/* #grapeOG {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.ooo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+}
+
+#grapeOG div {
+  position: absolute;
+  display: block;
+}
+
+#grapeOG div:nth-child(1) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+} */
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40%{
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60%{
+    transform: translateX(20px) rotate(180deg);
+  }
+  80%{
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100%{
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
 }
